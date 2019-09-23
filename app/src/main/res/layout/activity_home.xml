@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FFFFFF"
+    tools:context="com.newproject.doencasoperacionais.HomeActivity"
+    >
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:background="@drawable/menu"
+        tools:targetApi="lollipop"
+
+        android:id="@+id/idImage2"
+        android:paddingBottom="50dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/idText1"
+        android:paddingTop="50dp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:text="JOB SAFETY"
+        android:gravity="center_horizontal"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/idText2"
+        android:textColor="#505050"
+        android:textStyle="normal"
+        android:text="Doenças Ocupacionais"
+        android:layout_below="@+id/idText1"
+        android:gravity="center_horizontal"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idText2"
+        android:id="@+id/idEdit1"
+        android:paddingRight="30dp"
+        android:paddingBottom="10dp"
+        android:textColor="#2b3b48"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/ic_menu_search"
+        tools:targetApi="lollipop"
+
+        android:id="@+id/idImage1"
+        android:layout_alignBottom="@+id/idEdit1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:paddingBottom="50dp"
+        />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idEdit1"
+        android:id="@+id/idList1"
+        >
+
+    </ListView>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        android:visibility="gone"
+        android:id="@+id/idFrame1"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="O que é obsenteísmo?"
+                android:textColor="#505050"
+                android:textStyle="bold"
+                android:id="@+id/idText5"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="#505050"
+                android:text="@string/texto1"
+                android:textStyle="normal"
+                android:id="@+id/idText6"
+                />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jadison Lopes Developer"
+        android:textStyle="italic"
+        android:textColor="#BDBDBD"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/idTextPropaganda1"
+        />
+
+    <ImageView
+        android:layout_width="13dp"
+        android:layout_height="13dp"
+        android:id="@+id/idImageInsta"
+        android:background="@drawable/instagram"
+        android:layout_toStartOf="@+id/idTextPropaganda2"
+        android:layout_alignParentBottom="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" @jadisonlopess"
+        android:textStyle="italic"
+        android:textAlignment="viewEnd"
+        android:textColor="#BDBDBD"
+        android:id="@+id/idTextPropaganda2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        />
+
+</RelativeLayout>
